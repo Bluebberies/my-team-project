@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 60px 100px 0 109px;
+    padding: 1rem 4rem;
+    width: 82%;
+    flex-direction: column;
+    overflow: hidden auto;
+}
+
+#container{
+    max-width: 1200px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.headline{
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    width: 100%;
+    color: #000000;
+}
+
+.headline-2{
+    margin-top: 15px;
+}
+
+.description-head{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.description{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.person-container{
+    width: 240px;
+    padding: 10px;
+    margin-right: 55px;
+}
+
+.person-container:nth-child(3n-1) {
+    margin-top: 6rem;
+}
+
+.person-info{
+    display: flex;
+}
+
+img{
+    width: 100%;
+}
+
+.writing{
+    writing-mode: vertical-lr;
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.bold{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 122px;
+}
+
+footer p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+@media only screen and (max-width: 900px){
+    header {
+        flex-direction: column;
+    }
+    .person-container {
+        width: 30%;
+        padding: 0;
+    }
+    .person-container:nth-child(3n-1) {
+        margin-top: 0rem;
+    }
+    .person-container:nth-child(2n) {
+        margin-top: 3.5rem;
+    }
+}
